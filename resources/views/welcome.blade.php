@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('app')
 
-        <link href="//fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
+@section('content')
+        <div class="title">Taylor Silenzio</div>
+        <div class="detail">Software Engineer</div>
+        <div class="links-container">
+            <div class="line"></div>
+            <ul class="contact-links">
+                <li><a href="mailto:me@tsilenz.io" target="_blank"><span class="fa fa-envelope"></span></a></li>
+                <li><a href="https://www.facebook.com/tsilenzio" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                <li><a href="https://twitter.com/tsilenzio" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                <li><a href="https://www.linkedin.com/in/taylorsilenzio" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                <li><a href="https://plus.google.com/101159104355234508140/posts" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                <li><a href="https://github.com/tsilenzio" target="_blank"><span class="fa fa-github"></span></a></li>
+            </ul>
         </div>
-    </body>
-</html>
+@stop

@@ -11,6 +11,15 @@
 |
 */
 
+use App\Http\Requests\Request;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/events/click', function(\Illuminate\Http\Request $request) {
+    return [
+        'user_agent' => $_SERVER['HTTP_USER_AGENT'],
+        'ip' => $request->ip()
+    ];
 });
