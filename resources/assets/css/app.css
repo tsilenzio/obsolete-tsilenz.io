@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    color: #627078;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;
+    font-family: 'Lato';
+    overflow-x: hidden;
+    /*background: #f8f8f8;*/
+    /*background: #3A3C3C;*/
+    background: #2A3841;
+}
+.container {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*.content {
+    text-align: center;
+    display: inline-block;
+}*/
+.title {
+    color: #9BA3A7;
+    opacity: 0;
+    font-size: 96px;
+    margin: 0 0 10px 0;
+    -webkit-transform: translateY(16px);
+    -moz-transform: translateY(16px);
+    -o-transform: translateY(16px);
+    -ms-transform: translateY(16px);
+    transform: translateY(16px);
+}
+.detail {
+    opacity: 0;
+    font-size: 48px;
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -o-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    transform: translateY(8px);
+}
+.error {
+    color: #B0BEC5;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.links-container {
+    width: 100%;
+    margin: 20px auto;
+}
+.contact-links {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+.contact-links > li {
+    display: inline-block;
+    padding: 15px;
+}
+.contact-links > li a {
+    position: relative;
+    text-decoration: none;
+    /*background: #1B1725;*/
+    background: #627078;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.contact-links > li a:before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    width: 85%;
+    height: 85%;
+    opacity: 0.8;
+    /*border: 1px solid #1B1725;*/
+    border: 1px solid #627078;
+    border-radius: 50%;
+    -webkit-transition: opacity 0.4s ease, -webkit-transform 0.5s ease;
+    transition: opacity 0.4s ease, transform 0.5s ease;
+}
+.no-touch .contact-links > li a:hover:before {
+    opacity: 0;
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
+}
+.no-touch .contact-links > li a:hover span.fa {
+    -webkit-animation: 0.5s slide-icon cubic-bezier(0.694, 0.048, 0.335, 1) 0s;
+    animation: 0.5s slide-icon cubic-bezier(0.694, 0.048, 0.335, 1) 0s;
+}
+.contact-links > li a:focus {
+    opacity: 0.85;
+}
+.contact-links > li a span {
+    font-size: 2.5em;
+    line-height: 80px;
+    /*color: #fff;*/
+    color: #032336;
+}
+@-webkit-keyframes slide-icon {
+    49% {
+        -webkit-transform: translateX(-80px);
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px);
+    }
+    80% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-icon {
+    49% {
+        -webkit-transform: translateX(-80px);
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateX(80px);
+        transform: translateX(80px);
+    }
+    80% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.intro {
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    transition: all 0.6s;
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.pace .pace-progress {
+    background: #627078;
+    height: 4px;
+}
+
+
+
+/*.line {*/
+    /*position: absolute;*/
+    /*margin-bottom: 16px;*/
+    /*-webkit-transition: all 0.6s;*/
+    /*-moz-transition: all 0.6s;*/
+    /*-o-transition: all 0.6s;*/
+    /*-ms-transition: all 0.6s;*/
+    /*transition: all 0.6s;*/
+    /*display: block;*/
+    /*height: 1px;*/
+    /*background: transparent;*/
+    /*width: 1%;*/
+/*}*/
+/*.line.drawn {*/
+    /*width: 100%;*/
+    /*background: #fff;*/
+/*}*/
