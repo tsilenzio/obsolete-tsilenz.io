@@ -1,5 +1,6 @@
 /.idea
 /vendor
 /node_modules
+/resources/assets/vendor
 Homestead.yaml
 .env
