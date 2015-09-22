@@ -2,7 +2,7 @@ tsilenzio/tsilenzio:
 
   #The PkgInclude is to identify files that must be included in the application deployment: http://distel.li/pkgincludesection
   PkgInclude:
-    - '*'
+    - '**'
 
   #The PreRelease section is for specifying build and pre-packaging steps: http://distel.li/prereleasesection
   PreRelease:
